@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class FullHorrorPostFXTrigger : MonoBehaviour
+public class PPE_Item : MonoBehaviour
 {
     [Header("References")]
     public Volume globalVolume;

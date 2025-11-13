@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectScaler : MonoBehaviour
 {
-
     public Transform player;               
     public float triggerDistance = 10f;     
     public float maxScaleMultiplier = 2f;   

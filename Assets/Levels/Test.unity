@@ -1354,7 +1354,7 @@ GameObject:
   - component: {fileID: 606018600}
   - component: {fileID: 606018599}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +1535,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 899428459418414007, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1579502704}
+      addedObject: {fileID: 1579502712}
   m_SourcePrefab: {fileID: 100100000, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
 --- !u!1 &671831057
 GameObject:
@@ -1911,10 +1911,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!1001 &935013990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2009,10 +2009,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!1001 &955312166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2569,10 +2569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!4 &1149182387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
@@ -2595,10 +2595,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!4 &1149435591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
@@ -3752,10 +3752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!4 &1551986870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
@@ -3822,17 +3822,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b846d8f536f007498c941069487ce81, type: 3}
---- !u!4 &1577837227 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
-  m_PrefabInstance: {fileID: 1973235733}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1579502703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 899428459418414007, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
   m_PrefabInstance: {fileID: 635437628}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1579502704
+--- !u!4 &1579502708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
+  m_PrefabInstance: {fileID: 635437628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1579502712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3844,15 +3844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
---- !u!4 &1579502708 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
-  m_PrefabInstance: {fileID: 635437628}
-  m_PrefabAsset: {fileID: 0}
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!1 &1626597258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,7 +4544,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
   m_PrefabInstance: {fileID: 2066313326}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1957501280
+--- !u!114 &1957501285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4558,7 +4553,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1957501274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4090cabdd83900f44b46636f17dc8b6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 077af531b5e22b743a04c4a7aa579f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 606018600}
@@ -4829,7 +4824,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1957501280}
+      addedObject: {fileID: 1957501285}
   m_SourcePrefab: {fileID: 100100000, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
 --- !u!1 &2071023839 stripped
 GameObject:
@@ -4848,10 +4843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f73e6b7a91da9940a2e7f7ad491cf90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577837227}
-  triggerDistance: 20
-  maxScaleMultiplier: 5
-  scaleSpeed: 0.5
+  player: {fileID: 0}
+  triggerDistance: 10
+  maxScaleMultiplier: 2
+  scaleSpeed: 2
 --- !u!4 &2071023844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8718778828885884488, guid: e5f4daf24146ee040b5a2d7a73b30aa0, type: 3}
