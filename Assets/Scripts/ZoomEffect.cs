@@ -20,7 +20,7 @@ public class ZoomEffect : MonoBehaviour
         {
             zoomingOut = false;
 
-            if (vcam.m_Lens.FieldOfView > 45)
+            if (vcam.m_Lens.FieldOfView > 20)
             {
                 vcam.m_Lens.FieldOfView -= zoomSpeed * Time.deltaTime;
             }
