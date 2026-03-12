@@ -19720,7 +19720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.295
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -88748,12 +88748,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1577837235}
-  walkBobSpeed: 8
-  sprintBobSpeed: 16
-  walkBobAmount: 0.05
-  sprintBobAmount: 0.1
-  horizontalAmount: 0.09
-  smooth: 8
+  walkBobSpeed: 9
+  sprintBobSpeed: 18
+  walkBobAmount: 0.07
+  sprintBobAmount: 0.13
+  horizontalAmount: 0.11
+  smooth: 10
 --- !u!1 &1738147283
 GameObject:
   m_ObjectHideFlags: 0
@@ -100661,6 +100661,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 154316363}
     m_Modifications:
+    - target: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5393215578589016655, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -106548,7 +106552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.295
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -111149,8 +111153,8 @@ SceneRoots:
   - {fileID: 1035881421}
   - {fileID: 1519095904}
   - {fileID: 393224227}
+  - {fileID: 2066838218}
   - {fileID: 501793873}
   - {fileID: 826513513}
-  - {fileID: 2066838218}
   - {fileID: 1607781099}
   - {fileID: 1961327108}
