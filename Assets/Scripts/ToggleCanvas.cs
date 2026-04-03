@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class ToggleCanvas : MonoBehaviour
 {
-    public GameObject canvasObject;            
+    public GameObject canvasObject;
+    public GameObject canvasObject2;
     public FirstPersonController playerController; 
 
     private bool isCanvasActive = false;
 
     void Start()
     {
-        canvasObject.SetActive(false); 
+        canvasObject.SetActive(false);
+        canvasObject2.SetActive(false);
     }
 
     void Update()
@@ -23,8 +25,9 @@ public class ToggleCanvas : MonoBehaviour
 
            
             canvasObject.SetActive(isCanvasActive);
+            canvasObject2.SetActive(isCanvasActive);
 
-            
+
             if (playerController != null)
                 playerController.enabled = !isCanvasActive;
 
