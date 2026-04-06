@@ -6,15 +6,17 @@ using UnityEngine;
 public class ToggleCanvas : MonoBehaviour
 {
     public GameObject canvasObject;
-    public GameObject canvasObject2;
-    public FirstPersonController playerController; 
+    public FirstPersonController playerController;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip openCloseSound;
 
     private bool isCanvasActive = false;
 
     void Start()
     {
         canvasObject.SetActive(false);
-        canvasObject2.SetActive(false);
     }
 
     void Update()
@@ -23,15 +25,20 @@ public class ToggleCanvas : MonoBehaviour
         {
             isCanvasActive = !isCanvasActive;
 
-           
+ 
+            if (audioSource != null && openCloseSound != null)
+            {
+                audioSource.PlayOneShot(openCloseSound);
+            }
+
+
             canvasObject.SetActive(isCanvasActive);
-            canvasObject2.SetActive(isCanvasActive);
 
 
             if (playerController != null)
                 playerController.enabled = !isCanvasActive;
 
-         
+
             Cursor.lockState = isCanvasActive ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = isCanvasActive;
         }
