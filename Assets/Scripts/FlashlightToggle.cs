@@ -13,7 +13,7 @@ public class FlashlightToggle : MonoBehaviour
         {
             flashlight.enabled = !flashlight.enabled;
 
-            // Play sound
+            
             if (audioSource != null && toggleSound != null)
             {
                 audioSource.PlayOneShot(toggleSound);

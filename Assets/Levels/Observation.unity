@@ -5732,6 +5732,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534063664}
     m_Modifications:
+    - target: {fileID: 1030972137, guid: abc00000000017827325732577814477, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
     - target: {fileID: 1030973068, guid: abc00000000017682511239113812552, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Door (3)
@@ -5777,10 +5781,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1030973080, guid: abc00000000017682511239113812552, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
-    - target: {fileID: 1030972137, guid: abc00000000017827325732577814477, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
@@ -42538,8 +42538,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534063663}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 149.44138, y: 11.088885, z: 34.354027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.108795, y: -25.454689, z: -88.28281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42879,7 +42879,7 @@ Transform:
   - {fileID: 1693550387}
   - {fileID: 2142844293}
   - {fileID: 374846895}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1281524351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &536335292
 PrefabInstance:
@@ -80790,7 +80790,7 @@ Transform:
   m_GameObject: {fileID: 1074099778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 115.451164, y: -2.0373611, z: -168.00024}
+  m_LocalPosition: {x: -2.8814163, y: -38.580936, z: -290.6371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -81033,7 +81033,7 @@ Transform:
   - {fileID: 1242479694}
   - {fileID: 1670185048}
   - {fileID: 1111165136}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1281524351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1075274071
 PrefabInstance:
@@ -106207,6 +106207,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1030972132, guid: abc00000000017827325732577814477, type: 3}
   m_PrefabInstance: {fileID: 1277515140}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1281524350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281524351}
+  m_Layer: 0
+  m_Name: OBSERVATION
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281524351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281524350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.33258, y: 36.543575, z: 122.63683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 534063664}
+  - {fileID: 1074099779}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1282720489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107776,10 +107809,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534063664}
     m_Modifications:
-    - target: {fileID: 1030973080, guid: abc00000000017682511239113812552, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
     - target: {fileID: 1030974300, guid: abc00000000014735363274794095799, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Door_Closed
@@ -107833,6 +107862,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1030974306, guid: abc00000000014735363274794095799, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
+    - target: {fileID: 1030973080, guid: abc00000000017682511239113812552, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
@@ -151108,6 +151141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534063664}
     m_Modifications:
+    - target: {fileID: 1030972137, guid: abc00000000017827325732577814477, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
     - target: {fileID: 1030973068, guid: abc00000000017682511239113812552, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Door
@@ -151153,10 +151190,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1030973080, guid: abc00000000017682511239113812552, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
-    - target: {fileID: 1030972137, guid: abc00000000017827325732577814477, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c1abc031dd78d4040a2f10b888f0af24, type: 2}
@@ -175884,6 +175917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlight: {fileID: 606018600}
+  audioSource: {fileID: 0}
+  toggleSound: {fileID: 0}
 --- !u!1001 &1958577490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199076,11 +199111,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 154316363}
   - {fileID: 1948420126}
-  - {fileID: 1074099779}
-  - {fileID: 534063664}
   - {fileID: 958824109}
   - {fileID: 393224227}
   - {fileID: 826513513}
   - {fileID: 1488198312}
   - {fileID: 644598997}
   - {fileID: 1685375170}
+  - {fileID: 1281524351}

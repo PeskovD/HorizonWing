@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scripts/ScriptsImport/StartScreen.unity
-    guid: 78e46705a4d6bb044bf5ef2fad00c35e
+    path: Assets/Levels/StartScreen.unity
+    guid: b8f31901105c20a4b83f9724da0a481f
   - enabled: 1
     path: Assets/Levels/Start.unity
     guid: 376659b1d12f8dd41afed2939170927e
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Levels/Observation.unity
     guid: b3973eb5d9cd9694db1c7ad2377be2a2
   - enabled: 1
-    path: Assets/Scripts/ScriptsImport/optionScreen.unity
+    path: Assets/Scripts/Scripts/optionScreen.unity
     guid: 6e3d3cd11e388234eb43fb1618227c81
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
