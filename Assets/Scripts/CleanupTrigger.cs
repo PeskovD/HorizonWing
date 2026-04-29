@@ -8,16 +8,21 @@ public class CleanupTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            foreach (Transform parent in parentObjects)
-            {
-                if (parent == null) continue;
+            SetChildrenActive(false);
+        }
+    }
 
-                foreach (Transform child in parent.GetComponentsInChildren<Transform>(true))
+    void SetChildrenActive(bool state)
+    {
+        foreach (Transform parent in parentObjects)
+        {
+            if (parent == null) continue;
+
+            foreach (Transform child in parent.GetComponentsInChildren<Transform>(true))
+            {
+                if (child != parent)
                 {
-                    if (child != parent) 
-                    {
-                        child.gameObject.SetActive(false);
-                    }
+                    child.gameObject.SetActive(state);
                 }
             }
         }

@@ -1,24 +1,22 @@
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine;
-using System.Collections;
 
 public class KEYPAD : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI Ans;
     [SerializeField] private Animator Door;
-
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip correctSound;
     [SerializeField] private AudioClip wrongSound;
 
-    public string Answer = "1977";
+    public string Answer = "A7B4C2D6";
 
-    public void Number(int number)
+    public void Input(string value)
     {
-        if (Ans.text.Length < 4)
+        if (Ans.text.Length < 8)
         {
-            Ans.text += number.ToString();
+            Ans.text += value;
         }
     }
 
@@ -33,14 +31,18 @@ public class KEYPAD : MonoBehaviour
         {
             Ans.text = "Correct";
 
-            audioSource.PlayOneShot(correctSound);
+            if (audioSource != null && correctSound != null)
+                audioSource.PlayOneShot(correctSound);
 
-            Door.SetBool("Open", true); // open door
+            if (Door != null)
+                Door.SetBool("Open", true);
         }
         else
         {
             Ans.text = "WRONG";
-            audioSource.PlayOneShot(wrongSound);
+
+            if (audioSource != null && wrongSound != null)
+                audioSource.PlayOneShot(wrongSound);
         }
     }
 }

@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &7121203477158168333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,6 +2264,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ans: {fileID: 8454511012498878588}
   Door: {fileID: 0}
+  audioSource: {fileID: 0}
+  correctSound: {fileID: 0}
+  wrongSound: {fileID: 0}
+  Answer: 1977
 --- !u!1 &6643626238425811374
 GameObject:
   m_ObjectHideFlags: 0
