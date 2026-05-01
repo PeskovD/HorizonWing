@@ -6,7 +6,7 @@ using TMPro;
 
 public class TriggerText : MonoBehaviour
 {
-    public GameObject canvasObject;   // Drag your Canvas or Text object here
+    public GameObject canvasObject;   
     public float displayTime = 3f;
 
     private bool triggered = false;
@@ -33,7 +33,7 @@ public class TriggerText : MonoBehaviour
 
         canvasObject.SetActive(false);
 
-        // disable trigger permanently
+        
         GetComponent<Collider>().enabled = false;
     }
 }
