@@ -4,17 +4,16 @@ using UnityEngine.UI;
 
 public class PlayerRaycast : MonoBehaviour
 {
-    [Header("References")]
+
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private GameObject playerObject;
     [SerializeField] private Camera playerCamera;
 
-    [Header("Interaction")]
     public GameObject interactText;
     public float interactionDistance = 3f;
     public LayerMask layers;
 
-    [Header("Crosshair")]
+
     [SerializeField] private Image crosshair;
     [SerializeField] private Color normalColor = Color.white;
     [SerializeField] private Color interactColor = Color.green;
